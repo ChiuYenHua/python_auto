@@ -10,4 +10,4 @@ def main():
 
 if __name__ == '__main__':
     print(check_reboot())
-    sys.exit(1)
+    sys.exit(0)
