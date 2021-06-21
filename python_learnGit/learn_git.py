@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 import os
+import sys
 
 def check_reboot():
-    return os.path.exist('/run/reboot-required')
+    return os.path.exists('/run/reboot-required')
 
 def main():
     pass
 
-main()
+if __name__ == '__main__':
+    print(check_reboot())
+    sys.exit(1)
